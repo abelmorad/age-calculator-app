@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  font-family: 'Courier New', Courier, monospace;
+}
+main {
+  display: grid;
+  background-color:antiquewhite;
+  height: 500px;
+  width: 500px;
+}
+.birth-date-container {
+  display: flex;
+}
+.input-style {
+  display: flex;
+  flex-direction: column;
+}
