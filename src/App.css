@@ -1,21 +1,62 @@
+:root {
+  ---color-primary-01: hsl(259, 100%, 65%);
+  ---color-primary-02: hsl(0, 100%, 67%);
+
+  ---color-neutral-01: hsl(0, 0%, 100%);
+  ---color-neutral-02: hsl(0, 0%, 94%);
+  ---color-neutral-03: hsl(0,0%, 86%);
+  ---color-neutral-04: hsl(0, 1%, 44%);
+  ---color-neutral-05: hsl(0, 0%, 8%);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 #root {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Poppins', sans-serif;
+
+}
+body {
+  background-color: var(---color-neutral-02);
 }
 main {
   display: grid;
-  background-color:antiquewhite;
-  height: 500px;
-  width: 500px;
+}
+.bg {
+  background-color: var(---color-neutral-01);
+  margin: 4.5rem 1rem;
+  height: 450px;
+  border-radius: 20px 20px 100px 20px;
 }
 .birth-date-container {
-  display: flex;
+  padding-top: 2.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  place-content: center;
 }
-.input-style {
+.input-container {
   display: flex;
   flex-direction: column;
+}
+.label-style {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(---color-neutral-04);
+}
+.input {
+  margin-top: 0.3rem;
+  outline: 1px solid var(---color-neutral-03);
+  border: none;
+  border-radius: 10px;
+  padding-left: 0.8rem;
+  height: 3rem;
+  width: 5.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(---color-neutral-05);
+}
+.input:active {
+  outline: 1px solid var(---color-primary-01);
 }

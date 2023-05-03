@@ -4,11 +4,12 @@ import BirthDate from './components/BirthDate'
 function App() {
 
   return (
-    <>
       <main>
-        <BirthDate/>
+        <div className='bg'>
+          <BirthDate/>
+
+        </div>
       </main>
-    </>
   )
 }
 
